@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://manueladillehenriquez.github.io/nutricionista-camila-ortega/sitemap.xml
