@@ -120,6 +120,7 @@
     <a href="#servicios" class="nav-link">Atención</a>
     <a href="#sobre-mi" class="nav-link">Sobre mí</a>
     <a href="#blog" class="nav-link">Blog</a>
+    <a href="#seccion-informativa" class="nav-link">Sección informativa</a>
     <a href="#herramientas" class="nav-link">Herramientas</a>
     <a href="#contacto" class="nav-link">Contacto</a>
     <a href="#contacto" class="nav-cta">Agenda tu hora</a>
@@ -234,6 +235,74 @@
     <p style="font-size:16.5px;color:var(--textSoft);margin:0 0 40px;max-width:560px;">Artículos con base clínica sobre temas frecuentes en consulta, para entender mejor cada condición y qué cambia en el día a día.</p>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px;" id="blogGrid"></div>
   </div>
+</section>
+
+<!-- SECCIÓN INFORMATIVA -->
+<section id="seccion-informativa" style="background:var(--tint);padding:80px 5vw;">
+  <style>
+    .info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
+    .info-card{border:1px solid var(--hairline);border-radius:16px;background:white;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 8px 24px -16px oklch(0.4 0.1 305 / 0.35);}
+    .info-video-wrap{background:#14201c;display:flex;justify-content:center;}
+    .info-card video{display:block;width:100%;max-width:360px;aspect-ratio:9/16;object-fit:contain;background:#14201c;}
+    .info-card-body{padding:22px 24px 26px;}
+    @media (max-width:1000px){.info-grid{grid-template-columns:repeat(2,1fr);}}
+    @media (max-width:640px){.info-grid{grid-template-columns:1fr;}}
+  </style>
+  <div style="max-width:1280px;margin:0 auto;">
+    <span class="section-kicker fade-up">Aprende con Camila</span>
+    <h2 class="section-heading fade-up">Sección informativa</h2>
+    <p style="font-size:16.5px;color:var(--textSoft);margin:0 0 40px;max-width:560px;">Videos cortos de Camila para que entiendas mejor tu alimentación y tu salud.</p>
+    <div class="info-grid">
+      <article class="info-card hover-lift">
+        <div class="info-video-wrap">
+          <video controls preload="metadata" playsinline poster="img/poster-alimentos-que-hinchan.jpg" aria-label="Video: alimentos que hinchan y deshinchan">
+            <source src="videos/alimentos-que-hinchan.mp4" type="video/mp4">
+            Tu navegador no soporta video HTML5.
+          </video>
+        </div>
+        <div class="info-card-body">
+          <h3 style="font-family:'Manrope',sans-serif;font-weight:700;font-size:20px;margin:0 0 8px;color:#14201c;">Alimentos que hinchan y deshinchan</h3>
+          <p style="font-size:15px;line-height:1.6;color:var(--textSoft);margin:0;">Camila explica qué alimentos suelen causar sensación de hinchazón y cuáles pueden ayudarte a sentirte más liviano.</p>
+        </div>
+      </article>
+      <article class="info-card hover-lift">
+        <div class="info-video-wrap">
+          <video controls preload="metadata" playsinline poster="img/poster-dieta.jpg" aria-label="Video: hablemos de dieta">
+            <source src="videos/dieta.mp4" type="video/mp4">
+            Tu navegador no soporta video HTML5.
+          </video>
+        </div>
+        <div class="info-card-body">
+          <h3 style="font-family:'Manrope',sans-serif;font-weight:700;font-size:20px;margin:0 0 8px;color:#14201c;">Hablemos de dieta</h3>
+          <p style="font-size:15px;line-height:1.6;color:var(--textSoft);margin:0;">Una mirada profesional sobre cómo entender la alimentación y la dieta en tu día a día.</p>
+        </div>
+      </article>
+      <article class="info-card hover-lift">
+        <div class="info-video-wrap">
+          <video controls preload="metadata" playsinline poster="img/poster-obesidad.jpg" aria-label="Video: entendiendo la obesidad">
+            <source src="videos/obesidad.mp4" type="video/mp4">
+            Tu navegador no soporta video HTML5.
+          </video>
+        </div>
+        <div class="info-card-body">
+          <h3 style="font-family:'Manrope',sans-serif;font-weight:700;font-size:20px;margin:0 0 8px;color:#14201c;">Entendiendo la obesidad</h3>
+          <p style="font-size:15px;line-height:1.6;color:var(--textSoft);margin:0;">Información clara sobre qué es la obesidad y por qué conviene abordarla con acompañamiento profesional.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+  <script type="application/ld+json">
+  [
+    {"@context":"https://schema.org","@type":"VideoObject","name":"Alimentos que hinchan y deshinchan","description":"Camila Ortega explica qué alimentos suelen causar hinchazón y cuáles pueden ayudar a sentirse más liviano.","thumbnailUrl":"https://www.nutricionistacamilaortega.cl/img/poster-alimentos-que-hinchan.jpg","contentUrl":"https://www.nutricionistacamilaortega.cl/videos/alimentos-que-hinchan.mp4","uploadDate":"2026-11-16","duration":"PT1M7S"},
+    {"@context":"https://schema.org","@type":"VideoObject","name":"Hablemos de dieta","description":"Una mirada profesional sobre cómo entender la alimentación y la dieta en el día a día.","thumbnailUrl":"https://www.nutricionistacamilaortega.cl/img/poster-dieta.jpg","contentUrl":"https://www.nutricionistacamilaortega.cl/videos/dieta.mp4","uploadDate":"2026-11-16","duration":"PT52S"},
+    {"@context":"https://schema.org","@type":"VideoObject","name":"Entendiendo la obesidad","description":"Información clara sobre qué es la obesidad y por qué conviene abordarla con acompañamiento profesional.","thumbnailUrl":"https://www.nutricionistacamilaortega.cl/img/poster-obesidad.jpg","contentUrl":"https://www.nutricionistacamilaortega.cl/videos/obesidad.mp4","uploadDate":"2026-11-16","duration":"PT32S"}
+  ]
+  </script>
+  <script>
+    document.querySelectorAll('#seccion-informativa video').forEach(function(v, _, all){
+      v.addEventListener('play', function(){ all.forEach(function(o){ if(o !== v) o.pause(); }); });
+    });
+  </script>
 </section>
 
 <!-- HERRAMIENTAS -->
